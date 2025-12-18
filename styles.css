@@ -73,15 +73,15 @@ button:hover{background:var(--dorado);color:var(--negro);}
 
 .sponsors-track{
   display: flex;
+  gap: 90px;           /* Más espacio entre logos */
   align-items: center;
-  gap: 60px;
   width: max-content;
   animation: scrollSponsors 30s linear infinite;
 }
 
 .sponsors-track img{
-  height: 80px;        /* ⬅️ MÁS GRANDES */
-  max-height: 80px;
+  height: 20px;        /* ⬅️ MÁS GRANDES */
+  max-height: 20px;
   width: auto;
   object-fit: contain;
   filter: none;
