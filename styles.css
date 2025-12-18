@@ -15,6 +15,21 @@ body{background:var(--negro);color:var(--blanco);}
 nav a{color:var(--blanco);margin-left:20px;text-decoration:none;font-weight:bold;}
 nav a:hover{color:var(--dorado);}
 
+/* LOGO NAVBAR */
+.nav-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  color: var(--dorado);
+  font-size: 18px;
+}
+
+.nav-logo img{
+  height: 42px;          /* tamaño ideal */
+  width: auto;
+}
+
 
 /* SECCIONES */
 .hero{height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
