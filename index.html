@@ -204,6 +204,30 @@
   </div>
 </footer>
 
+  <script>
+  const matchDate = new Date("January 20, 2026 15:00:00").getTime();
 
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = matchDate - now;
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.querySelector(".match-countdown").innerHTML = "<span>¡HOY JUEGA CDR!</span>";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+  }, 1000);
+</script>
+</body>
   
 </html>
