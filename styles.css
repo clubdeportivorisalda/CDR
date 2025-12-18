@@ -153,12 +153,8 @@ button:hover{background:var(--dorado);color:var(--negro);}
 }
 
 /* RESPONSIVE */
-@media(max-width:900px){
-  .footer-content{
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .footer-social{
-    justify-content: center;
+@media(max-width:768px){
+  .sponsors-track img{
+    height: 20px;
   }
 }
