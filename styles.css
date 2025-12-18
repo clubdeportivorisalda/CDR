@@ -66,18 +66,39 @@ button:hover{background:var(--dorado);color:var(--negro);}
 }
 
 .footer-sponsors{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
   margin-bottom: 50px;
 }
 
-.footer-sponsors img{
-  max-height: 50px;
-  filter: grayscale(100%);
-  opacity: 0.9;
+.sponsors-track{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scrollSponsors 30s linear infinite;
+}
+
+.sponsors-track img{
+  max-height: 55px;
+  object-fit: contain;
+  filter: none;              /* LOGOS A COLOR */
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.sponsors-track img:hover{
+  transform: scale(1.1);
+}
+
+/* Animación */
+@keyframes scrollSponsors{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-50%);
+  }
 }
 
 .footer-content{
