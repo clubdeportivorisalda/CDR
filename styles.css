@@ -68,26 +68,27 @@ button:hover{background:var(--dorado);color:var(--negro);}
 .footer-sponsors{
   overflow: hidden;
   width: 100%;
-  margin-bottom: 50px;
+  padding: 20px 0;
 }
 
 .sponsors-track{
   display: flex;
-  gap: 90px;           /* Más espacio entre logos */
-  align-items: center;
+  align-items: center;     /* 🔑 CLAVE */
+  gap: 80px;
   width: max-content;
-  animation: scrollSponsors 30s linear infinite;
+  animation: scrollSponsors 35s linear infinite;
 }
 
 .sponsors-track img{
-  height: 20px;        /* ⬅️ MÁS GRANDES */
-  max-height: 20px;
+  max-height: 70px;        /* TAMAÑO REAL */
+  max-width: 180px;        /* EVITA LOGOS GIGANTES */
   width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
   filter: none;
   opacity: 1;
 }
-
 .sponsors-track img:hover{
   transform: scale(1.1);
 }
