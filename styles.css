@@ -156,6 +156,7 @@ button:hover{background:var(--dorado);color:var(--negro);}
 /* RESPONSIVE */
 @media(max-width:768px){
   .sponsors-track img{
-    height: 20px;
+    max-height: 55px;
+    max-width: 140px;
   }
 }
