@@ -172,3 +172,41 @@ button:hover{background:var(--dorado);color:var(--negro);}
   border-radius: 30px;
   font-weight: bold;
 }
+
+
+/* TITULOS */
+.titles-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.title-card{
+  background: linear-gradient(180deg, #111, #000);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid var(--dorado);
+  position: relative;
+}
+
+.title-year{
+  display: inline-block;
+  background: var(--dorado);
+  color: var(--negro);
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+.title-card h3{
+  color: var(--blanco);
+  margin-bottom: 8px;
+}
+
+.title-card p{
+  color: #bbb;
+  font-size: 14px;
+}
