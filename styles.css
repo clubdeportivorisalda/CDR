@@ -82,7 +82,8 @@ button:hover{background:var(--dorado);color:var(--negro);}
 .sponsors-track img{
   max-height: 70px;        /* TAMAÑO REAL */
   max-width: 180px;        /* EVITA LOGOS GIGANTES */
-  width: auto;
+  align-self: center;
+ width: auto;
   height: auto;
   object-fit: contain;
   display: block;
