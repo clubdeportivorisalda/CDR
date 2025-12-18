@@ -56,3 +56,14 @@
     font-size: 36px;
   }
 }
+
+
+.btn{
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #8b0000, #ff0000);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
