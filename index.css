@@ -1,0 +1,58 @@
+/* HERO VIDEO */
+.hero-video{
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-bg-video{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-video::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.85)
+  );
+  z-index: 2;
+}
+
+.hero-content{
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.hero-content h1{
+  font-size: 52px;
+  color: var(--dorado);
+  margin-bottom: 15px;
+}
+
+.hero-content p{
+  font-size: 20px;
+  color: var(--blanco);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-video{
+    height: 70vh;
+  }
+  .hero-content h1{
+    font-size: 36px;
+  }
+}
