@@ -107,3 +107,88 @@
   font-size: 14px;
   color: #ccc;
 }
+
+/* PROXIMO PARTIDO */
+.next-match{
+  padding: 80px 5%;
+  background: linear-gradient(180deg, #000, #111);
+}
+
+.match-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #0b0b0b;
+  border-radius: 20px;
+  padding: 50px;
+  border: 1px solid var(--dorado);
+}
+
+.match-label{
+  color: var(--dorado);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.match-info h2{
+  margin: 20px 0;
+  font-size: 36px;
+  color: var(--blanco);
+}
+
+.match-info h2 span{
+  color: var(--rojo);
+}
+
+.match-info h2 strong{
+  margin: 0 15px;
+  color: var(--blanco);
+}
+
+.match-details{
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* COUNTDOWN */
+.match-countdown{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.match-countdown div{
+  background: #000;
+  border-radius: 16px;
+  padding: 25px 10px;
+  border: 1px solid var(--dorado);
+}
+
+.match-countdown span{
+  display: block;
+  font-size: 38px;
+  font-weight: bold;
+  color: var(--dorado);
+}
+
+.match-countdown small{
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .match-card{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .match-info h2{
+    font-size: 28px;
+  }
+}
