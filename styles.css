@@ -51,42 +51,98 @@ button:hover{background:var(--dorado);color:var(--negro);}
 
 
 /* FOOTER PROFESIONAL */
-.footer-sponsors{
-  overflow: hidden;
-  width: 100%;
-  padding: 15px 0;
+/* FOOTER GENERAL */
+.footer-pro{
+  background: url('img/footer-estadio.jpg') center/cover no-repeat;
+  color: var(--blanco);
 }
 
-.sponsors-track{
+.footer-overlay{
+  background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.95));
+  padding: 70px 40px 40px;
+}
+
+/* SPONSORS PEQUEÑOS Y ANIMADOS */
+.footer-sponsors{
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.footer-sponsors-track{
   display: flex;
   align-items: center;
   gap: 60px;
   width: max-content;
-  animation: sponsorsMove 40s linear infinite;
+  animation: footerSponsorsMove 45s linear infinite;
 }
 
-.sponsors-track img{
-  height: 40px;          /* 🔹 PEQUEÑOS */
+.footer-sponsors-track img{
+  height: 40px;              /* PEQUEÑOS */
   max-width: 120px;
   width: auto;
   object-fit: contain;
-  display: block;
-  filter: none;
   opacity: 0.9;
 }
 
-/* animación automática */
-@keyframes sponsorsMove{
-  from{
-    transform: translateX(0);
-  }
-  to{
-    transform: translateX(-50%);
-  }
+/* animación */
+@keyframes footerSponsorsMove{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
 }
-@media(max-width:768px){
-  .sponsors-track img{
+
+/* CONTENIDO FOOTER */
+.footer-content{
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo img{
+  max-width: 120px;
+}
+
+.footer-text{
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-text strong{
+  color: var(--dorado);
+}
+
+.footer-social{
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.footer-social a{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--rojo);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .footer-content{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-social{
+    justify-content: center;
+  }
+  .footer-sponsors-track img{
     height: 32px;
-    max-width: 100px;
   }
 }
